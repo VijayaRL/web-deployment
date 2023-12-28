@@ -3,5 +3,5 @@ name: web-app
 replicas: 1
 
 image:
-  name: vijayalakshman/apache_webserver
+  name: vijayalakshman/httpd_webserver
   tag: latest

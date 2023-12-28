@@ -17,14 +17,14 @@ terraform apply -var-file="dev.tfvars"
 ### Build and Push the docker image to DockerHub
 
 ```
-docker build -t vijayalakshman/apache_webserver:latest .
-docker push -t vijayalakshman/apache_webserver:latest
+docker build -t vijayalakshman/httpd_webserver:latest .
+docker push -t vijayalakshman/httpd_webserver:latest
 ```
 
 ### Install ArgoCD 
 
 ```
-aws eks update-kubeconfig --region us-east-1 --name <my-eks-cluster-name>
+aws eks update-kubeconfig --region us-east-1 --name web-dev
 kubectl create ns argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.5.8/manifests/install.yaml
 ```

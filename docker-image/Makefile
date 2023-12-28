@@ -1,5 +1,5 @@
 build:
-	docker build -t vijayalakshman/apache_webserver:latest .
+	docker build -t vijayalakshman/httpd_webserver:latest .
 
 push:
-	docker push vijayalakshman/apache_webserver:latest
+	docker push vijayalakshman/httpd_webserver:latest
