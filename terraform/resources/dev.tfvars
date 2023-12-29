@@ -10,5 +10,5 @@ ondemand_services_instance = ["t3.xlarge"]
 ondemand_services_desired_size = "1"
 ondemand_services_max_size = "1"
 ondemand_services_min_size = "1"
-ondemand_services_disk_size = "5"
+ondemand_services_disk_size = "20"
 region = "us-east-1"
