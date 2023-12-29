@@ -43,6 +43,10 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 ```
 
 Access the ArgoCD server using Service External IP
+```
+kubectl get svc -n argocd
+https://<<External DNS of argocd server>>/
+```
 
 ### Run Argocd application
 
