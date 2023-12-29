@@ -64,5 +64,6 @@ kubectl apply -f web-app.yaml
 ### Access web application 
 
 ```
+kubectl get svc -n web-app
 http://<load-balancer>/index.html
 ```
