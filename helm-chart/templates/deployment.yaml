@@ -30,9 +30,11 @@ spec:
           name: {{ .Values.name }}
         resources:
           requests:
-            memory: "256Mi"
+            memory: "12Gi"
+            cpu: "3"
           limits:
-            memory: "512Mi"
+            memory: "14Gi"
+            cpu: "4"
         ports:
         - containerPort: 80
           name: {{ .Values.name }}
